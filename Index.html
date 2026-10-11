@@ -1,1 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#111315">
 
+<title>Shruti Stone Crusher | Parbhani, Maharashtra</title>
+<meta name="description" content="Shruti Stone Crusher, Kapsi, Palam, Parbhani, Maharashtra. Send enquiries about stone aggregate and construction materials.">
+
+<style>
+:root {
+  --gold: #f4ad42;
+  --gold-light: #ffd17d;
+  --dark: #111315;
+  --dark2: #191c1f;
+  --gray: #aeb3b8;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--dark);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; }
+.container { width: min(1150px, 90%); margin: auto; }
+
+header {
+  background: rgba(17,19,21,.98);
+  border-bottom: 1px solid #343434;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo { display: flex; align-items: center; gap: 12px; }
+
+.logo-icon {
+  background: var(--gold);
+  color: #151515;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  font-weight: 900;
+  clip-path: polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);
+}
+
+.logo h2 { font-size: 16px; line-height: 1.3; }
+.logo small { font-size: 10px; letter-spacing: 2px; color: var(--gold); }
+
+.nav-links { display: flex; gap: 23px; align-items: center; }
+.nav-links a { color: #e5e5e5; font-size: 13px; font-weight: bold; }
+.nav-links a:hover { color: var(--gold); }
+
+.button, .nav-cta {
+  display: inline-block;
+  background: var(--gold);
+  color: #171717;
+  padding: 13px 20px;
+  font-size: 13px;
+  font-weight: 800;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: .2s;
+}
+
+.button:hover, .nav-cta:hover { background: var(--gold-light); }
+.menu-btn { display: none; background: none; color: white; border: 1px solid #555; padding: 5px 12px; font-size: 24px; }
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg, rgba(10,12,13,.96), rgba(10,12,13,.75), rgba(10,12,13,.35)),
+    url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.hero-content { padding: 85px 0; max-width: 740px; }
+.eyebrow { color: var(--gold); font-size: 12px; font-weight: bold; letter-spacing: 3px; }
+
+.hero h1 {
+  font-size: clamp(38px, 6.5vw, 76px);
+  line-height: 1.08;
+  margin: 22px 0;
+}
+
+.hero h1 span, .gold { color: var(--gold); }
+.hero p { color: #d2d5d7; max-width: 570px; margin-bottom: 30px; font-size: 17px; }
+.hero-buttons { display: flex; flex-wrap: wrap; gap: 13px; }
+
+.button-outline {
+  display: inline-block;
+  color: white;
+  border: 1px solid #888;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.button-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+.trust-strip { background: var(--gold); color: #161616; padding: 17px 0; }
+.trust-inner { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font-size: 12px; font-weight: 800; }
+
+section.content-section { padding: 80px 0; }
+
+.section-heading { max-width: 680px; margin-bottom: 38px; }
+.section-heading h2 { font-size: clamp(30px, 4vw, 45px); line-height: 1.2; margin: 12px 0; }
+.section-heading p { color: var(--gray); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.about-image {
+  min-height: 380px;
+  background: url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1100&q=85") center/cover;
+  border: 1px solid #393939;
+  border-radius: 5px;
+}
+
+.about-text h2 { font-size: clamp(30px, 4vw, 43px); line-height: 1.2; margin: 12px 0 18px; }
+.about-text p { color: var(--gray); margin-bottom: 15px; }
+.feature-list { list-style: none; margin: 22px 0; }
+.feature-list li { margin: 12px 0; color: #e4e4e4; }
+.feature-list li::before { content: "◆"; color: var(--gold); margin-right: 12px; }
+
+.products-section { background: var(--dark2); }
+.product-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+.product-card { background: #222629; border: 1px solid #353a3e; border-radius: 5px; overflow: hidden; transition: .25s; }
+.product-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.product-image { height: 205px; background-size: cover; background-position: center; }
+.product-card:nth-child(1) .product-image { background-image: url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=800&q=80"); }
+.product-card:nth-child(2) .product-image { background-image: url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"); }
+.product-card:nth-child(3) .product-image { background-image: url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"); }
+.product-info { padding: 24px; }
+.product-info h3 { font-size: 21px; margin-bottom: 9px; }
+.product-info p { color: var(--gray); font-size: 14px; margin-bottom: 18px; }
+.product-link { color: var(--gold); font-weight: bold; font-size: 13px; }
+
+.cta-section {
+  padding: 70px 0;
+  text-align: center;
+  background: linear-gradient(rgba(12,14,15,.9),rgba(12,14,15,.9)),
+  url("https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1800&q=80") center/cover;
+}
+.cta-section h2 { font-size: clamp(30px,5vw,48px); line-height: 1.2; margin: 15px 0; }
+.cta-section p { color: #d0d0d0; margin-bottom: 25px; }
+
+.location-section { background: #141719; }
+.location-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 35px; align-items: center; }
+.location-info h2 { font-size: clamp(30px,4vw,42px); line-height: 1.2; margin: 13px 0 18px; }
+.location-info p { color: var(--gray); margin-bottom: 20px; }
+.location-card { border: 1px solid #383e42; padding: 22px; margin: 20px 0; background: #1d2124; border-radius: 5px; }
+.location-card strong { color: var(--gold); display: block; margin-bottom: 5px; }
+
+.map-container { border: 1px solid #454545; border-radius: 6px; overflow: hidden; }
+.map-container iframe { width: 100%; height: 390px; display: block; border: 0; }
+
+.enquiry-section { background: var(--dark2); }
+.enquiry-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 45px; }
+.enquiry-info h2 { font-size: clamp(30px,4vw,42px); line-height: 1.2; margin: 12px 0 18px; }
+.enquiry-info p { color: var(--gray); margin-bottom: 17px; }
+
+.form-box { background: #111416; padding: 30px; border: 1px solid #343a3e; border-radius: 5px; }
+.form-box label { display: block; font-size: 13px; margin-bottom: 7px; color: #ddd; }
+.form-box input, .form-box select, .form-box textarea {
+  width: 100%;
+  background: #222629;
+  border: 1px solid #454b50;
+  color: white;
+  padding: 13px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  border-radius: 3px;
+  outline: none;
+}
+.form-box input:focus, .form-box select:focus, .form-box textarea:focus { border-color: var(--gold); }
+.form-box textarea { min-height: 110px; resize: vertical; }
+.form-box .button { width: 100%; }
+.form-note { color: #aaa; font-size: 12px; margin-top: 12px; }
+footer { padding: 32px 0; background: #090a0b; border-top: 1px solid #333; }
+.footer-inner { display: flex; justify-content: space-between; gap: 22px; flex-wrap: wrap; align-items: center; }
+.footer-inner p { color: #999; font-size: 12px; }
+.footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+.footer-links a { color: #ddd; font-size: 13px; }
+.footer-links a:hover { color: var(--gold); }
+
+@media(max-width:850px) {
+  .menu-btn { display: block; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 76px; left: 0; right: 0;
+    background: #111315;
+    padding: 23px 5%;
+    flex-direction: column;
+    align-items: stretch;
+    border-bottom: 1px solid #333;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 7px 0; }
+  .nav-cta { text-align: center; }
+  .about-grid, .location-grid, .enquiry-grid { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: repeat(2,1fr); }
+  .about-image { min-height: 290px; }
+}
+
+@media(max-width:550px) {
+  .hero { min-height: 550px; background-position: 58% center; }
+  .hero p { font-size: 15px; }
+  section.content-section { padding: 58px 0; }
+  .product-grid { grid-template-columns: 1fr; }
+  .trust-inner { flex-direction: column; gap: 8px; }
+  .form-box { padding: 20px; }
+  .map-container iframe { height: 320px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="#home" class="logo">
+      <div class="logo-icon">S</div>
+      <div>
+        <h2>SHRUTI STONE CRUSHER</h2>
+        <small>KAPSI • PARBHANI</small>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#products">MATERIALS</a>
+      <a href="#location">LOCATION</a>
+      <a href="#enquiry" class="nav-cta">SEND ENQUIRY</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">STONE CRUSHING • CONSTRUCTION MATERIALS</div>
+      <h1>STRONG<br>FOUNDATIONS.<br><span>BUILT TO LAST.</span></h1>
+      <p>
+        Welcome to Shruti Stone Crusher, Kapsi, Palam,
+        Parbhani, Maharashtra. Contact us for enquiries
+        about stone aggregate and construction materials.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="button">EXPLORE MATERIALS ↘</a>
+        <a href="#location" class="button-outline">FIND OUR LOCATION ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="container trust-inner">
+    <span>◆ SHRUTI STONE CRUSHER</span>
+    <span>◆ KAPSI, PALAM</span>
+    <span>◆ PARBHANI, MAHARASHTRA</span>
+    <span>◆ CONSTRUCTION MATERIAL ENQUIRIES</span>
+  </div>
+</div>
+
+<section class="content-section" id="about">
+  <div class="container about-grid">
+    <div class="about-image" role="img" aria-label="Industrial machinery"></div>
+    <div class="about-text">
+      <div class="eyebrow">ABOUT OUR BUSINESS</div>
+      <h2>Materials for <span class="gold">Strong Foundations.</span></h2>
+      <p>Shruti Stone Crusher is located in Kapsi, Palam, Parbhani, Maharashtra.</p>
+      <p>We welcome enquiries from contractors, builders, infrastructure businesses and individuals looking for stone aggregate and construction materials.</p>
+      <ul class="feature-list">
+        <li>Construction material enquiries</li>
+        <li>Bulk requirement enquiries</li>
+        <li>Location details and directions</li>
+        <li>Easy email enquiry form</li>
+      </ul>
+      <a href="#enquiry" class="button">SEND AN ENQUIRY ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="content-section products-section" id="products">
+  <div class="container">
+    <div class="section-heading">
+      <div class="eyebrow">MATERIALS & ENQUIRIES</div>
+      <h2>Explore Our <span class="gold">Materials</span></h2>
+      <p>Contact us to enquire about available sizes, quantities, pricing and delivery arrangements.</p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-image" role="img" aria-label="Industrial machinery"></div>
+        <div class="product-info">
+          <h3>Stone Aggregate</h3>
+          <p>Enquire about available aggregate sizes for your construction requirements.</p>
+          <a href="#enquiry" class="product-link">ENQUIRE NOW ↗</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image" role="img" aria-label="Construction materials"></div>
+        <div class="product-info">
+          <h3>Crusher Material</h3>
+          <p>Tell us your required material type and quantity to check availability.</p>
+          <a href="#enquiry" class="product-link">CHECK AVAILABILITY ↗</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image" role="img" aria-label="Building and infrastructure"></div>
+        <div class="product-info">
+          <h3>Bulk Requirements</h3>
+          <p>Enquire about bulk quantities and possible transport arrangements.</p>
+          <a href="#enquiry" class="product-link">DISCUSS YOUR NEEDS ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="eyebrow">HAVE A REQUIREMENT?</div>
+    <h2>Let's Discuss Your <span class="gold">Project.</span></h2>
+    <p>Tell us what material you need and the quantity required.</p>
+    <a href="#enquiry" class="button">MAKE AN ENQUIRY ↗</a>
+  </div>
+</section>
+
+<section class="content-section location-section" id="location">
+  <div class="container location-grid">
+    <div class="location-info">
+      <div class="eyebrow">FIND US</div>
+      <h2>Visit <span class="gold">Our Location.</span></h2>
+      <p>Open Google Maps to view the mapped location and get directions.</p>
+
+      <div class="location-card">
+        <strong>BUSINESS NAME</strong>
+        Shruti Stone Crusher
+        <br><br>
+        <strong>ADDRESS</strong>
+        Kapsi, Palam, Parbhani, Maharashtra – 431720
+      </div>
+
+      <a class="button"
+         href="https://www.google.com/maps/search/?api=1&query=Shruti+Stone+Crusher%2C+Kapsi%2C+Palam%2C+Parbhani%2C+Maharashtra"
+         target="_blank" rel="noopener noreferrer">
+        OPEN GOOGLE MAPS ↗
+      </a>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://maps.google.com/maps?q=2V68%2B74%2C%20Kapsi%2C%20Maharashtra%20431720&t=&z=17&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of Kapsi, Palam, Parbhani">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="content-section enquiry-section" id="enquiry">
+  <div class="container enquiry-grid">
+    <div class="enquiry-info">
+      <div class="eyebrow">CONTACT & ENQUIRIES</div>
+      <h2>Tell Us What <span class="gold">You Need.</span></h2>
+      <p>
+        Complete the form and submit your enquiry.
+        Your details will be sent to the email address
+        configured by the website owner.
+      </p>
+      <p>
+        <strong class="gold">Location:</strong><br>
+        Shruti Stone Crusher<br>
+        Kapsi, Palam, Parbhani<br>
+        Maharashtra – 431720
+      </p>
+      <p>Your personal phone number does not need to appear on this website.</p>
+    </div>
+
+    <!-- Replace YOUR_EMAIL_HERE with your receiving email address -->
+    <form class="form-box"
+          action="https://formsubmit.co/apuravjadhav31@gmail.com
+      "
+          method="POST">
+
+      <input type="hidden" name="_subject" value="New Customer Enquiry - Shruti Stone Crusher">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="true">
+
+      <label for="customerName">Your Name *</label>
+      <input id="customerName" name="Customer Name" type="text"
+             placeholder="Enter your name" maxlength="100" required>
+
+      <label for="customerEmail">Your Email (optional)</label>
+      <input id="customerEmail" name="Customer Email" type="email"
+             placeholder="Enter your email address">
+
+      <label for="material">Material Required *</label>
+      <select id="material" name="Material Required" required>
+        <option value="">Select material</option>
+        <option>Stone Aggregate</option>
+        <option>Crusher Material</option>
+        <option>Bulk Material Requirement</option>
+        <option>Other / Need Information</option>
+      </select>
+
+      <label for="quantity">Required Quantity</label>
+      <input id="quantity" name="Required Quantity" type="text"
+             placeholder="e.g. 10 brass / 20 tonnes" maxlength="100">
+
+      <label for="customerMessage">Project Details *</label>
+      <textarea id="customerMessage" name="Project Details"
+                placeholder="Describe your material requirement or delivery location"
+                maxlength="3000" required></textarea>
+
+      <button class="button" type="submit">SEND ENQUIRY ↗</button>
+
+      <p class="form-note">
+        Your information will be submitted to the website owner's configured
+        email service. Please avoid including sensitive personal information.
+      </p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="logo">
+      <div class="logo-icon">S</div>
+      <div>
+        <h2>SHRUTI STONE CRUSHER</h2>
+        <small>KAPSI • PARBHANI</small>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Materials</a>
+      <a href="#location">Location</a>
+      <a href="#enquiry">Enquiry</a>
+    </div>
+
+    <p>© <span id="year"></span> Shruti Stone Crusher. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function () {
+  navLinks.classList.toggle("open");
+  menuBtn.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+    menuBtn.textContent = "☰";
+  });
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+  </html>
